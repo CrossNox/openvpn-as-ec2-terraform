@@ -24,10 +24,10 @@ _note_: a `t2.nano` does not have enough RAM to run the docker image. A nice imp
 1. `xdg-open https://$(cat ec2_openvpn_ip)/admin`
 2. Log in to the admin console
 3. Agree to the EULA
-4. Set `Configuration -> Network Settings -> Hostname or IP Address`
+4. Set `Configuration -> Network Settings -> Hostname or IP Address` to the IP from `ec2_openvpn_ip`
 5. Set `Configuration -> VPN Settings -> Routing` to `Yes, using routing`
 6. Go to the user console (`xdg-open https://$(cat ec2_openvpn_ip)`) and download the `ovpn` file from `Yourself (user locked profile)`
-7. Depending on your OS, use that file as necessary to connect to the VPN 
+7. Depending on your OS, use that file as necessary to connect to the VPN
 8. You can now browse the web and traffic will come from that AWS region.
 
 ## Destroy infrastructure
