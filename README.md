@@ -1,7 +1,7 @@
 # OpenVPN terraform
 ## On AWS EC2 - Using docker
 
-This terraform project allows you to quickly create an OpenVPN Access Server on AWS EC2 using Docker. The structure is such that you can switch to another region quickly.
+This terraform project allows you to quickly create an OpenVPN Access Server on AWS EC2 using Docker. The structure is such that you can switch to another region easily.
 
 # Using
 ## Key pairs
