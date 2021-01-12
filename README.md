@@ -21,7 +21,7 @@ _note_: a `t2.nano` does not have enough RAM to run the docker image. A nice imp
 3. Confirm and wait
 
 ## Set VPN up
-1. `xdg-open https://$(cat ec2_openvpn_ip)`/admin
+1. `xdg-open https://$(cat ec2_openvpn_ip)/admin`
 2. Log in to the admin console
 3. Agree to the EULA
 4. Set `Configuration -> Network Settings -> Hostname or IP Address`
