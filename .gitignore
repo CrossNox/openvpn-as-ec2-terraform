@@ -1,0 +1,5 @@
+.terraform
+*.ovpn
+*.pem
+*.tfstate*
+ec2_openvpn_ip
