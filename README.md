@@ -35,7 +35,9 @@ For instance, this would be an appropriate layout:
         └── key_pair.pem
 ```
 
-So, change `key_pair_name` and `private_key_location_prefix` as needed. `region` should be changed as needed.
+And you would set `private_key_location_prefix` to `something/project_name`, and `key_pair_name` to `key_pair.pem`.
+
+So, leave `key_pair_name` and `private_key_location_prefix` as constants. `region` should be changed as needed.
 
 ### `ami_id_amzn_linux_2_hvm`
 The AMI ids are updated as of 2021-01-11. Add any other region you might need to the map. To use a different region, just change the `region` var. 
