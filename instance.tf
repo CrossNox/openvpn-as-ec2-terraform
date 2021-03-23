@@ -1,5 +1,22 @@
+data "aws_ami" "amazon-linux-2" {
+  most_recent = true
+
+  owners  = ["amazon"]
+
+  filter {
+    name   = "name"
+    values = ["*amzn2-ami-hvm-2.0.2021*"]
+  }
+
+  filter {
+    name   = "architecture"
+    values = [ "x86_64" ]
+  }
+}
+
+
 resource "aws_instance" "openvpn" {
-  ami           = var.ami_id_amzn_linux_2_hvm[var.region]
+  ami = data.aws_ami.amazon-linux-2.id
   instance_type = var.instance_type
   key_name        = var.key_pair_name
   vpc_security_group_ids = [aws_security_group.openvpn_sg.id]
@@ -26,4 +43,3 @@ resource "aws_instance" "openvpn" {
   }
 
 }
-
